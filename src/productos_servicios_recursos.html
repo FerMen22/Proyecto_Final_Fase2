@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="sp">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Titulo -->
+    <title>Valor</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="titulacion/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+    <!-- Alerta de lectura -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-azul text-white">
+                    <h5 class="modal-title">Nota:</h5>
+
+                </div>
+                <div class="modal-body">
+                    <p>Dentro de esta página podras observar contenedores, al dar click sobre ellos podras encontrar
+                        informacion adicional y relevante sobre el tema</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-oro" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="btnMostrarModal" type="button" class="btn btn-primary d-none" data-toggle="modal"
+        data-target="#exampleModal">
+        Mostrar Alerta
+    </button>
+    <script>
+        $(document).ready(function () {
+            $('#btnMostrarModal').click();
+        });
+    </script>
+    <!-- Fin de la alerta -->
+
+ 
+    <!--Comienza NAV-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-azul">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo_unam.png"></a>
+        <p class="text-white text-center" style="width: 8rem; font-size: x-large;">Licenciatura en Informática</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active ml-4">
+                    <a class="nav-link text-white h4" href="../index.html">Inicio <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown ml-4">
+                    <a class="nav-link dropdown-toggle text-white h4" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Conceptos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="tamaño" href="gestion_servicios.html">Gestión de
+                            Servicios</a>
+                        <a class="dropdown-item" href="valor.html">
+                            Valor</a>
+                        <a class="dropdown-item" id="tamaño" href="co_creaciondevalor.html">Co-Creación de
+                            valor</a>
+                        <a class="dropdown-item" href="organizacion.html">
+                            Organización</a>
+                        <a class="dropdown-item" href="cliente_usuario_patrocinador.html">Cliente, Usuario y
+                            Patrocinador</a>
+                        <a class="dropdown-item" href="productos_servicios_recursos.html">Productos, Servicios y
+                            Recursos</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ml-4">
+                    <a class="nav-link dropdown-toggle text-white h4" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Participantes
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="perfil_Eli.html">Participante 1</a>
+                        <a class="dropdown-item" href="perfil_Fer.html">Participante 2</a>
+                        <a class="dropdown-item" href="perfil_Cyn.html">Participante 3</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-oro my-2 my-sm-0" type="submit">Buscar</button>
+
+            </form>
+            <a class="navbar-brand" href="#"><img src="../img/logo_fesc.png"></a>
+
+        </div>
+    </nav>
+    <!-- Termina NAV -->
+    <h2 class="p-3 mb-2 bg-secondary text-white text-center"><strong>Productos, Servicios y Recursos</strong></h2>
+    <div class="container mt-4">
+        <div class="col-sm">
+            <div class="container" id="accordionExample">
+                <div class="card-body" id="serv_prod_recur">
+                    <h2>Valor: Servicios, productos y recursos
+                    </h2>
+                    <div class="card mx-auto shadow p-3 mb-5 bg-white rounded">
+                        <div class="card-body text-center collapsed" style="font-size: 20px;" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            <img class="img-fluid" width="60%" src="../img/valor-spr.jpg">
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                        <div class="contianer">
+                            <p>
+                                El componente central de la gestión de servicios es el servicio. El proveedor de
+                                servicios entrega valor a través del servicio. Los servicios que proporciona una
+                                organización se basan en productos. Los productos son la configuración de los recursos
+                                de una organización diseñados para ofrecer valor a un consumidor.
+                            </p>
+                        </div>
+                        <div class="container">
+                            <h4>Servicio</h4>
+                            <p>
+                                “Es un medio para habilitar la creación conjunta de valor al
+                                facilitar los resultados que los clientes desean alcanzar, sin que
+                                el cliente tenga que administrar los costos y riesgos específicos”.</p>
+                            <p>
+                                Todos los servicios tienen un costo de servicio cuando se vuelven operativos y este
+                                costo debe ser gestionado. Para evitar tomar riesgos, los consumidores recurren a
+                                los proveedores de servicios para satisfacer su necesidad de esos servicios. El
+                                proveedor de servicios, por otro lado, proporciona esos servicios de acuerdo con los
+                                requisitos de los clientes.
+                            </p>
+                        </div>
+                        <div class="container">
+                            <h4>Producto</h4>
+                            <p>
+                                “Es una configuración de los recursos de una organización
+                                designados para ofrecer valor a un consumidor”.</p>
+                            <p>
+                                Los servicios que proporciona una organización se basan en uno o más de sus
+                                productos. Las organizaciones poseen o tienen acceso a múltiples recursos, como
+                                personas, información y tecnología, flujos de valor y procesos, proveedores y
+                                socios. Los productos son configuraciones de estos recursos, creados por la
+                                organización, que potencialmente ofrecerán valor para sus clientes.
+                                <br>
+                                Cada producto que ofrece una organización se crea teniendo en cuenta los requisitos
+                                de la cantidad de grupos de consumidores objetivo. Un producto no es exclusivo de un
+                                grupo de consumidores y puede utilizarse para abordar los requisitos de numerosos
+                                grupos diferentes. Los productos están diseñados para atraer a los diferentes grupos
+                                de consumidores y para satisfacer sus requisitos.
+                                <br>
+                                Los productos suelen ser complejos y no son completamente visibles para el
+                                consumidor. La parte del producto que es realmente visible para el consumidor no
+                                siempre representa los componentes completos que forman parte del producto y que
+                                respaldan su entrega.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2>Oferta de Servicios
+                    </h2>
+                    <div class="card mx-auto shadow p-3 mb-5 bg-white rounded">
+                        <div class="card-body text-center collapsed" style="font-size: 20px;" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+
+                            <i>
+                                “Es la descripción de uno o más servicios, diseñado para satisfacer
+                                las necesidades de un específico grupo de consumidores. Una
+                                oferta de servicio puede incluir bienes, acceso a recursos y
+                                acciones de servicio”.
+                            </i>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                        <div class="text-center">
+                        <img src="../img/ofertadeservicio.jpg" class="img-fluid" alt="">
+                    </div>
+                        <p>
+                            Los proveedores de servicios ofrecen sus servicios a los consumidores
+                            en forma de ofertas de servicios. Las ofertas de servicios describen
+                            uno o más servicios basados en uno o más productos. Se pueden
+                            crear diferentes ofertas basadas en el mismo producto, lo que permite
+                            que el producto se utilice de múltiples maneras para satisfacer las
+                            necesidades de diferentes grupos de consumidores. Las ofertas de
+                            servicios están diseñadas teniendo en cuenta grupos específicos de
+                            consumidores objetivo.
+                        </p>
+                        <div class="container">
+                            <h4>
+                                Componentes de Oferta de Servicios
+                            </h4>
+                            <p>La siguiente tabla proporciona la descripción y ejemplo de los componentes típicos en una
+                                oferta de servicios:
+                            </p>
+                            <table class="table">
+                                <thead class="bg-azul text-white">
+                                    <tr>
+                                        <th scope="col">Componentes</th>
+                                        <th scope="col">Descripción</th>
+                                        <th scope="col">Ejemplo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Bienes</th>
+                                        <td>
+                                            <ul>
+                                                <li>Suministrados al consumidor</li>
+                                                <li>La propiedad se transfiere al consumidor</li>
+                                                <li>El consumidor asume la responsabilidad de su uso futuro</li>
+                                            </ul>
+                                        </td>
+                                        <td>Teléfono celular, laptop
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Acceso a Recursos</th>
+                                        <td>
+                                            <ul>
+                                                <li>La propiedad no se transfiere al consumidor</li>
+                                                <li>El acceso es otorgado o licenciado al consumidor bajo los términos y
+                                                    condiciones acordados</li>
+                                                <li>El consumidor puede acceder a los recursos durante el período de
+                                                    consumo acordado y según los términos de servicio acordados</li>
+                                            </ul>
+                                        </td>
+                                        <td>Internet, licencia para sistema
+                                            operativo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Acciones de Servicio</th>
+                                        <td>
+                                            <ul>
+                                                <li>Realizado por el proveedor de servicios para atender una necesidad
+                                                    del consumidor</li>
+                                                <li>Realizado según acuerdo con el consumidor</li>
+                                            </ul>
+                                        </td>
+                                        <td>Soporte a usuarios
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2>Relaciones de servicios</h2>
+                    <div class="card mx-auto shadow p-3 mb-5 bg-white rounded">
+                        <div class="card-body text-center" style="font-size: 20px;" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <p>¿Qué son las relaciones de servicios? </p>
+
+                        </div>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                        <p>
+                            Las relaciones de servicios se establecen entre dos o más
+                            organizaciones para co-crear valor. En una relación de servicio,
+                            las organizaciones asumirán los roles de proveedor de servicios y
+                            consumidor de servicios. Los dos roles no se excluyen mutuamente,
+                            y las organizaciones generalmente proporcionan y consumen una
+                            cantidad de servicios en un momento dado
+                        </p>
+                        <div class="text-center">
+                            <img src="../img/relaciones-org-a-b-c.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2>
+                        Gestión de relaciones de servicios
+                    </h2>
+                    <div class="card mx-auto shadow p-3 mb-5 bg-white rounded">
+                        <div class="card-body text-center collapsed" style="font-size: 20px;" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            <p>Las relaciones de servicios incluyen la gestión de relaciones de
+                                servicios, prestación y consumo de los mismos </p>
+
+                        </div>
+                    </div>
+
+                    <div id="collapseFour" class="collapse" data-parent="#accordionExample">
+                        <div class="text-center">
+                            <img src="../img/gestionrelacdeservi.jpg" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-2">
+                                <img class="img-fluid h-10" src="../img/aprovisionamiento.jpg">
+                            </div>
+                            <div class="col-10 text-left">
+                                <p class="h4">
+                                    aprovisionamiento de servicios
+                                </p>
+                                <ul>
+                                    <li>Gestión de los recursos del proveedor, configurados para la
+                                        entrega
+                                        del
+                                        servicio</li>
+                                    <li>Acceso a estos recursos por los usuarios</li>
+                                    <li>Cumplimiento de las acciones de servicio acordadas</li>
+                                    <li>Gestión del nivel de servicio y mejora continua</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-2">
+                                <img class="img-fluid h-10" src="../img/consumodeservicios.jpg">
+                            </div>
+                            <div class="col-10 text-left">
+
+                                <p class="h4">
+                                    consumo de servicios
+                                </p>
+                                <ul>
+                                    <li>Gestión de los recursos del consumidor necesarios para utilizar
+                                        el
+                                        servicio
+                                    </li>
+                                    <li>Acciones para el uso del servicio</li>
+                                    <li>Utilización de los recursos del proveedor</li>
+                                    <li>Acciones de solicitud de servicio a cumplir</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2>
+                        Modelo de relación de servicios
+                    </h2>
+                    <div class="card mx-auto shadow p-3 mb-5 bg-white rounded">
+                        <div class="card-body text-center collapsed" style="font-size: 20px;" type="button"
+                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive">
+                            <p>
+                                Cuando el proveedor de servicios entrega servicios, crea nuevos recursos para los
+                                consumidores de estos o modifican sus recursos existentes. Los consumidores de
+                                servicios pueden usar sus recursos nuevos o modificados para crear sus propios
+                                productos para satisfacer las necesidades de otro grupo de consumidores y
+                                convertirse en un proveedor de servicios. Estas relaciones e interacciones de
+                                servicio se representan a través del modelo de relaciones de servicios
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div id="collapseFive" class="collapse" data-parent="#accordionExample">
+                        <div class="text-center">
+                            <img src="../img/modelo-relacion-ser.jpg" class="img-fluid" alt="">
+                            <img src="../img/ejemplo-modelo-re-ser.jpg" class="img-fluid mt-4" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Comienzo Footer-->
+    <footer class="footer mt-4 py-5 bg-oro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="copyright text-center">
+                        <h2>
+                            Seminario de Administracón de TI.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
